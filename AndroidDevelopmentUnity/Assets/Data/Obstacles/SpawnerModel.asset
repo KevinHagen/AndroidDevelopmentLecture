@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 384e7a9bb00945d8b65d2e11eb6f341a, type: 3}
+  m_Name: SpawnerModel
+  m_EditorClassIdentifier: 
+  _obstaclePrefabs:
+    _items:
+    - _amount: 21
+      _item: {fileID: -3632348761268723040, guid: 756a85c5743406a47bd2edd45a87874a,
+        type: 3}
+      _probability: 0.21
+    - _amount: 21
+      _item: {fileID: -3632348761268723040, guid: 8cfce77909875c141b2738eda195d946,
+        type: 3}
+      _probability: 0.21
+    - _amount: 21
+      _item: {fileID: -3632348761268723040, guid: 4e9f697e489937f4bb66d7e0d59e4d1b,
+        type: 3}
+      _probability: 0.21
+    - _amount: 21
+      _item: {fileID: -3632348761268723040, guid: a217e6b4831f8114a8f2610dc593a18e,
+        type: 3}
+      _probability: 0.21
+    - _amount: 12
+      _item: {fileID: -6970638514374828664, guid: c79d00890b732334397ceaafc265a6d8,
+        type: 3}
+      _probability: 0.12
+    - _amount: 4
+      _item: {fileID: -7027225216236290699, guid: e4067ffcebb40804eaebc595783b2641,
+        type: 3}
+      _probability: 0.04
+  _spawnRate: 1
+  _clusterSizeMin: 2
+  _clusterSizeMax: 5
+  _clusterRadius: 8
+  _spawnDelay: 0.17
+  _color: {r: 0.6509804, g: 0.03529412, b: 0.24313726, a: 0.36078432}
+  _obstacleColor: {r: 0, g: 0.8039216, b: 0.8509804, a: 1}
+  _lineColor: {r: 0.09411765, g: 1, b: 0, a: 0.7607843}
+  _minDistanceBetweenObstaclesInCluster: 2
