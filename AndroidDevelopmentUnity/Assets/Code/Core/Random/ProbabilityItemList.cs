@@ -32,11 +32,13 @@ namespace Core.Random
 				totalCount += probabilityItem.Amount;
 			}
 
+#if UNITY_EDITOR
 			// calc probability in % based on individual item count & totalCount
 			foreach (ProbabilityItem<T> probabilityItem in _items)
 			{
 				probabilityItem.SetProbability(probabilityItem.Amount / totalCount);
 			}
+#endif
 		}
 
 		/// <summary>
