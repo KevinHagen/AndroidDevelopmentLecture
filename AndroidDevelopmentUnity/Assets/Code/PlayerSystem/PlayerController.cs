@@ -50,7 +50,18 @@ namespace PlayerSystem
 
 		private void FixedUpdate()
 		{
+#if UNITY_ANDROID && !UNITY_EDITOR
+			float horizontal = 0;
+			if (Input.touchCount > 0)
+			{
+				Touch touch = Input.GetTouch(0);
+				horizontal = touch.position.x / Screen.width > 0.5f ? 1f : -1f;
+			}
+			
+			_rigidbody.velocity = new Vector3(horizontal * _playerModel.MovementForce * Time.deltaTime, 0, 0f);
+#else
 			_rigidbody.velocity = new Vector3(Input.GetAxis("Horizontal") * _playerModel.MovementForce * Time.deltaTime, 0, 0f);
+#endif
 		}
 
 		private void OnTriggerEnter(Collider other)
